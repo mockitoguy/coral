@@ -94,7 +94,7 @@ tasks.build.dependsOn("publishJavaLibraryPublicationToMavenLocal")
 //Bintray configuration is handled by JFrog Bintray Gradle Plugin
 //For reference see the official documentation: https://github.com/bintray/gradle-bintray-plugin
 bintray {
-  user = 'lnkd-apa'
+  user = 'szczepiq'
   // The Bintray API token is required to publish artifacts to Bintray
   // Ensure that the release machine or Travis CI has this env variable exported
   key = System.getenv("BINTRAY_API_KEY")
@@ -103,9 +103,9 @@ bintray {
   publications = ['javaLibrary']
 
   pkg {
-    repo = 'maven'
+    repo = 'examples'
 
-    userOrg = 'linkedin'
+    userOrg = 'shipkit'
     name = 'coral'
     licenses = ['BSD 2-Clause']
     labels = [

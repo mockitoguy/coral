@@ -5,7 +5,7 @@ apply plugin: "org.shipkit.shipkit-github-release"
 tasks.named("generateChangelog") {
   previousRevision = project.ext.'shipkit-auto-version.previous-tag'
   githubToken = System.getenv("GH_WRITE_TOKEN")
-  repository = "linkedin/coral"
+  repository = "mockitoguy/coral"
 }
 
 tasks.named("githubRelease") {
